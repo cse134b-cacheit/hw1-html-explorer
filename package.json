@@ -1,0 +1,25 @@
+{
+  "name": "hw1-html-explorer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cse134b-cacheit/hw1-html-explorer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cse134b-cacheit/hw1-html-explorer/issues"
+  },
+  "homepage": "https://github.com/cse134b-cacheit/hw1-html-explorer",
+  "dependencies": {
+    "gulp-live-server": "0.0.14"
+  }
+}
