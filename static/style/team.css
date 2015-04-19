@@ -1,0 +1,7 @@
+.team-img {
+    -moz-border-radius: 32px;
+    -webkit-border-radius: 32px;
+    border-radius: 32px; /* future proofing */
+    -khtml-border-radius: 32px; /* for old Konqueror browsers */
+
+}
