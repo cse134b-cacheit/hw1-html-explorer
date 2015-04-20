@@ -9,46 +9,109 @@
 </head>
 
 <body>
-	<article>
-	<header>
-		<h1>Testing HTML elements</h1>
-		<p>This is some example text.</p>
-	</header>
-	<section>
-		<h2>Item 1</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-		Respondeat totidem verbis. Restatis igitur vos; Quo igitur, inquit,
-		modo? Eadem fortitudinis ratio reperietur.</p>
+	<main>
+		<article>
+			<header> 
+				<h1>cacheIT HTML Exploration</h1>
+				<p>This document explains the homework while containing basic examples of several HTML elements.</p> 
+			</header>
 
-	</section>
-	<section>
-		<h2>Item 2</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-		Respondeat totidem verbis. Restatis igitur vos; Quo igitur, inquit,
-		modo? Eadem fortitudinis ratio reperietur.</p>
+			<div>
+				<section>
+					<h2>Overview</h2>
+					<p>This homework presents an opportunity to try out the large number of tags supported in HTML5.</p>
 
-		<aside>
-		<p>This text should be tangential to the surrounding paragraphs.</p>
-		</aside>
+					<p>A few of the elements tested in this document, in the order they appear:</p>
+					<ol>
+						<li>head
+						<li>header
+						<li>section
+						<li>figure
+					</ol>
 
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-		Respondeat totidem verbis. Restatis igitur vos; Quo igitur, inquit,
-		modo? Eadem fortitudinis ratio reperietur.</p>
-	</section>
+					<p>A few of the element tested in this document, not necessarily in the order they appear:</p>
+					<ul>
+						<li>p
+						<li>h1
+						<li>h2
+						<li>link
+					</ul>
+				</section>
 
-	</article>
+				<section>
+					<h2>Specifics</h2>
+					<p>The HTML5 specification is a sprawling document that includes both tags and related APIs. Sections 3 and 4 of the specification cover the document and the various elements you may use. In order to gain some familiarity with the spec we want you to read it over and create simple example(s) that demonstrate every element in a valid way.
+					</p>
+
+					<aside>
+						<p>Do understand we are not expecting every aspect of every element to be tested as that would take a prohibitive amount of time.</p>
+					</aside>
+
+					<p>To test the elements you may make a single document or more likely a few documents. We would warn against making an individual document per element given the logistics of maintaining and linking all these files, but you may do so if you like.</p>
+
+					<hr>
+
+					<p>Test everything at <a href="http://validator.w3.org">w3 validator</a></p>
+				</section>
+
+				<section>
+					<h2>Docs</h2>
+					<p>Put all your tests in a folder called tests and label them in a clear manner. Provide an index.html page where the grader should start the exploration of your work.
+					</p>
+
+					<pre>Test everything with
+					Chrome
+					Firefox
+					IE
+					</pre>
+				</section>
+
+				<section>
+					<h2>Oddities</h2>
+					<p>Once you have completed your test cases view the tests in Firefox, Chrome and Internet Explorer and note non-supported elements or oddities you find. 
+					</p>
+
+					<blockquote>
+						<p>"Yes, even if IE sucks."</p>
+					</blockquote>
+
+					<p>Summarize any issues you find in an HTML page named "conformance.html".</p>
+				</section>
+
+				<section>
+					<h2>Where we work</h2>
+
+					<figure>
+						<img src="test.jpg"
+						alt="Geisel library, looking majestic">
+						<figcaption>We'll be working at Geisel, mostly.</figcaption>
+					</figure>
+				</section>
+			</div>
+		</article>
+	</main>
+
 	<nav>
-	<h3>Navigation</h3>
+		<h3>Navigation</h3>
 		<ul>
-		<li><a href="page1.html">Our first page.</a></li>
-		<li><a href="page2.html">Our second page.</a></li>
-		<li><a href="page3.html">Our third page.</a></li>
+			<li><a href="page1.html">Our first page.</a></li>
+			<li><a href="page2.html">Our second page.</a></li>
+			<li><a href="page3.html">Our third page.</a></li>
 		</ul>
+
+		<dl>
+			<dt>What do we want?</dt>
+			<dd>cacheIT</dd>
+			<dt>When do we want it?</dt>
+			<dd>Now.</dd>
+			<dt>Where is it?</dt>
+			<dd>UCSD</dd>
+		</dl>	
 	</nav>
 
 	<address>
-	Written by <a href="seleon@ucsd.edu">cacheIT</a>.<br>
-	Visit us at: cacheIT.com
+		Written by <a href="seleon@ucsd.edu">cacheIT</a>.<br>
+		Visit us at: cacheIT.com
 	</address>
 
 	<footer><a href="../">Back to index...</a></footer>
