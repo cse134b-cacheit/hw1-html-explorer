@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>CSE 134b HW 2</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js"></script>
+</head>
+<body>
+	<header> 
+		<h1>cacheIT HTML Form</h1>
+		<p>This document has basic examples of form.</p> 
+	</header>
+	<form method="post"
+      enctype="application/x-www-form-urlencoded"
+      action="https://cse134b.cacheIT.com/home">
+	  <p><label for="member">Select member:</label>
+		  <select id="member" name="member">
+		  <option value="1"> Sergio </option>
+		  <option value="2"> Alex </option>
+		  <option value="3"> Bal </option>
+		  <option value="4"> Joshua </option>
+		  <option value="5"> Kristine </option>
+ 		</select>
+	  </p>
+	  <label>
+	  Sex:
+	  <input name=sex list=sexes>
+	  </label>
+	  <datalist id=sexes>
+  	</datalist>
+	  <p><label>E-mail address: <input type=email name = "membermail" required></label></p>
+	  <fieldset>
+	  <legend> Team members </legend>
+	  <p><label> <input type=radio name= "members" value= "name"> Sergio Leon </label></p>
+	  <p><label> <input type=radio name= "members" value= "name"> Alex Gian  </label></p>
+	  <p><label> <input type=radio name= "members" value= "name"> Bal Krishna </label></p>
+	  <p><label> <input type=radio name= "members" value= "name"> Joshua Yuen </label></p>
+	  <p><label> <input type=radio name= "members" value= "name"> Kristine Nguyen </label></p>
+ 	</fieldset>
+	</form>
+	<form onsubmit="return false" oninput="o.value = a.valueAsNumber + b.valueAsNumber">
+	<input name=a type=number step=any> +
+	<input name=b type=number step=any> =
+	<output name=o for="a b"></output>
+	</form>
+ 	<form action="assignmentselector.dll" method="get">
+ 	<p>Which assignment would you like to turn-in?
+	 	<p><label>Assignment:
+		 	<select name="assignment">
+		 	<optgroup label="Assigment 1 due on 4/13">
+		 	<optgroup label="Assignment 2 due on 4/20">
+		 	<optgroup label="Assignment 3 due on 4/29">
+		 	<optgroup label="Assignment 4 due on 5/15">
+		 	<optgroup label="Assignment 5 due on 5/31">
+  			</select>
+  			</label>
+  	</form>
+ 	<p><label> Turn in time:<meter min="00" max="24" value="1"></meter></label></p>
+  	<p><label>Notes: <textarea name="comments"></textarea></label></p>
+ 	<p><keygen name="key"></p>
+ 	<p><button>Submit</button></p>
+ 	<section>
+ 	<h2>Turn-in Progress</h2>
+ 	<p>Progress: <progress id="p" max=100><span>0</span>%</progress></p>
+ 	<script>
+ 	var progressBar = document.getElementById('p');
+ 	function updateProgress(newValue) {
+    progressBar.value = newValue;
+    progressBar.getElementsByTagName('span')[0].textContent = newValue;
+  }
+ 	</script>
+	</section>
+	</body>
+</html>
