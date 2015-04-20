@@ -1,1 +1,2 @@
-#hw2-html-explorer
+#Homework 2 HTML Explorer
+
