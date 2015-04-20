@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>CSE 134b HW 2</title>
+		<link rel="stylesheet" href="style.css">
+		<script src="script.js"></script>
+	</head>
+
+	<body>
+
+		<hr>
+		<nav>
+		 <ul>
+		  <li> <a  href="http://classes.pint.com/cse134b/index.html">CSE 134B</a> </li>
+		  <li> <a  href="http://classes.pint.com/cse134b/homework/hw2.html">HW2</a> </li>
+		 </ul>
+		</nav>
+		<hr>
+
+		<p>East west <em>CacheIT</em> is <strong>best</strong>.
+		<br>
+		<strong><small>best of best.</small></strong></p>
+
+		<p>Join the family!
+		<br>
+		<s>Just for $10 per month</s>
+		<br>
+		<strong>This month for free</strong></p>
+		
+		<p>president<cite> Jak Logny</cite>-<q> Our website is not rocket scientist. Its't not <var>E</var>=<var>m</var><var>c</var><sup>2</sup> or
+
+		f(<var>x</var>, <var>n</var>) = log<sub>4</sub><var>x</var><sup><var>n</var></sup>.<i class="quote"> We provide <b>user friendly  interface.</b></i></q></p>
+
+		<p>We <dfn><abbr title="CacheIT">CIT</abbr></dfn>
+		are proud company.</p>
+
+		<script>
+			function showDetails(nerd) {
+		    var nerdType = nerd.getAttribute("data-nerd-type");
+		    var employeeType = nerd.getAttribute("data-employee-type");
+		    alert(nerd.innerHTML + " is  " + nerdType + " who spends most of the time " +employeeType+" around.");
+		}
+		</script>
+
+
+
+		<h3>Talented and Hardworking nerds of CacheIT</h3>
+		<p><u>Click on names to find out more about them</u></p>
+
+		<ul>
+		  <li onclick="showDetails(this)" id="alex" data-nerd-type="geek" data-employee-type ="geeking">Alex</li>
+		  <li onclick="showDetails(this)" id="sergio" data-nerd-type="single" data-employee-type ="dating">Sergio</li>
+		  <li onclick="showDetails(this)" id="bal" data-nerd-type="hungry" data-employee-type ="eating">Bal</li>
+		  <li onclick="showDetails(this)" id="joshua" data-nerd-type="smart" data-employee-type ="helping">Joshua</li>
+		  <li onclick="showDetails(this)" id="kristine" data-nerd-type="busy" data-employee-type ="working">Kristine</li>
+		</ul>
+
+		<p>Our customer support is available at <time datetime="2015-04-20">week days <mark> from 9:00am to 5:00pm</mark></time>.</p>
+		<div>
+			<code>
+				function showDetails(nerd) {<br>
+			    var nerdType = nerd.getAttribute("data-nerd-type");<br>
+			    var employeeType = nerd.getAttribute("data-employee-type");<br>
+			    alert(nerd.innerHTML + " is  " + nerdType + " who spends<br> most of the time " +employeeType+" around.");<br>
+			}
+			</code>
+			<br>
+			<samp>Alex is geek who spends most of the time geeking around</samp><br>
+			<kbd>enter</kbd><br>
+
+			<var>nerdType</var>
+		</div>
+
+		<hr>
+		<ruby>
+			CacheIT<rt> cash it</rt>
+			现金 <rp>(</rp><rt>xian jin</rt><rp>)</rp>
+			<!--<rp>(</rp>高速缓存<rp>)</rp>
+			rb>キャッシュ</rb>
+			rtc>cache</rtc>-->
+		</ruby>
+
+			<ul>
+			 <li><bdi>النقد الذي</bdi>:Has five employees.</li>
+			 <li><bdo dir="rtl">CacheIT is best</bdo></li>
+			</ul>
+
+			 <p>Cache<wbr>IT theme color is  <span style="color:blue">blue</span>.</p> 
+
+			 <aside>
+				 <ins >
+				  <p> CacheIT </p>
+				 </ins>
+				 <ins >
+				 is  <em>best</em>
+				 </ins>
+				 <ins >
+				  of the best.
+				 </ins>
+			</aside>
+
+			<ul>
+			 <li>index.html</li>
+			 <li><del >conference.html</del></li>
+			 <li><del >team.html</del></li>
+			 <li>deadline</li>
+			</ul>
+			<noscript>cacheIT is a new company. so we need more experince.</noscript>
+
+
+			<canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+			</canvas>
+			<br>
+
+			<button onclick="useIt()">Buy a service</button>
+				<div id="container"></div>
+				<script>
+				  function useIt() {
+				    var content = document.querySelector('template').content;
+				    var span = content.querySelector('span');
+				    span.textContent = parseInt(span.textContent) + 1;
+				    document.querySelector('#container').appendChild(
+				        document.importNode(content, true));
+				  }
+				</script>
+
+				<template>
+				  <div>Number of service bought: <span>0</span></div>
+				  <script>alert('Thanks!')</script>
+				</template>
+	</body>
+<!-- bdi,rb,rtc,rp is not supported -->
+</html>
