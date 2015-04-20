@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>CSE 134b HW 2</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js"></script>
+</head>
+<body>
+	<header> 
+		<h1>cacheIT HTML Form</h1>
+		<p>This document has basic examples of form.</p> 
+	</header>
+	<form method="post"
+      enctype="application/x-www-form-urlencoded"
+      action="https://cse134b.cacheIT.com/home">
+	  <p><label>Team member: <input name = "membname" required></label></p>
+	  <p><label>Assignment #: <input type=tel name = "assignment" required></label></p>
+	  <p><label>E-mail address: <input type=email name = "membemail" required></label></p>
+	  <fieldset>
+	  <legend> Team members </legend>
+	  <p><label> <input type=radio name= "members" value= "name"> Sergio Leon seleon@ucsd.edu </label></p>
+	  <p><label> <input type=radio name= "members" value= "name"> Alex Gian idk@ucsd.edu </label></p>
+	  <p><label> <input type=radio name= "members" value= "name"> Bal Krishna Oli idk@ucsd.edu </label></p>
+	  <p><label> <input type=radio name= "members" value= "name"> Joshua Yuen idk@ucsd.edu </label></p>
+	  <p><label> <input type=radio name= "members" value= "name"> Kristine Nguyen ntn027@ucsd.edu </label></p>
+ 	</fieldset>
+ 	<fieldset>
+ 	<legend> Assignment # </legend>
+ 	<p><label> <input type=checkbox name="assingment" value="1"> due 4/13 </label></p>
+ 	<p><label> <input type=checkbox name="assingment" value="2"> due 4/20 </label></p>
+ 	<p><label> <input type=checkbox name="assingment" value="3"> due 4/29 </label></p>
+ 	<p><label> <input type=checkbox name="assingment" value="4"> due 5/15 </label></p>
+ 	<p><label> <input type=checkbox name="assingment" value="5"> due 5/31 </label></p>
+ 	</fieldset>
+ 	<p><label> Turn in date :<input type=time min="12:00" max="03:00" step="10"></label></p>
+ 	<p><label>Notes: <textarea name="comments"></textarea></label></p>
+ 	<p><button>Submit</button></p>
+ 	</form>
+</body>
+</html>
