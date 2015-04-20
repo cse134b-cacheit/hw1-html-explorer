@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Testing 4.7 - Embedded Content</title>
+</head>
+<body>
+	<h1>Testing Embedded Content (4.7)</h1>
+	<h3>Click <a href="http://www.w3.org/TR/html5/embedded-content-0.html#embedded-content-0">here</a> for reference.</h3>
+
+	<img src="http://i.imgur.com/l3v4P3s.jpg" title="I have no idea what I am doing. I am resized." alt="This is a dog." width="400" height="300">
+	<p>Testing <code>img</code> element. I have no idea what I'm doing.</p>
+
+	<hr/>
+
+	<iframe width="400" height="300" src="https://www.google.com/maps/embed/v1/view?key=AIzaSyCTCYzqI8csJbOWZyYmsBR4hmYzp_3Arh4&amp;zoom=16&amp;center=32.8801%2C-117.2340&amp;maptype=satellite"></iframe>
+	<p>Testing <code>iframe</code> element. You are here.</p>
+
+	<hr/>
+
+	<embed type="text/plain" src="assets/Hello.java" width="400">
+	<p>Testing <code>embed</code> element. Java source code.</p>
+
+	<hr/>
+
+	<embed type="image/gif" src="http://i.imgur.com/RRiF1oP.gif" width="400" height="300">
+	<p>Testing <code>embed</code> element. GIF format</p>
+
+	<hr/>
+
+	<embed type="application/mspowerpoint" src="assets/pres.ppt" width="400" height="300" title="embed.ppt">
+	<p>Testing <code>embed</code> element. PPT format. Because apparently that's a thing.</p>
+	<p><strong>Ouch!</strong>While this syntax is validated, it appears that there is a separate plugin required, or this type has been deprecated for HTML5.</p>
+
+	<hr/>
+
+	<object data="assets/DITTY1.WAV" type="audio/wav">
+		<param name="width" value="400">
+		<param name="height" value="300">
+	</object>
+	<p>Testing <code>object</code> element. WAV format. Unfortunately, autoplay parameter is not a toggle option for <code>object</code> elements.</p>
+
+	<hr/>
+
+	<video width="400" height="300" controls>
+		<source src="assets/Obi_badjoke.mp4" type="video/mp4">
+		<track kind="captions" src="assets/track.vtt" srclang="en" label="English subs" default>
+		If you're seeing this message, that means your browser does not support the <code>video</code> element!
+	</video>
+	<p>Testing <code>video</code> element. MP4 format. Obi-Wan tells a bad joke in Episode I - The Phantom Menace.</p>
+	<p>Testing <code>track</code> element. VTT format. Attempted using <code>file://</code>, but apparently tracks must live on a web server in order to function properly. Phooey.</p>
+
+	<hr/>
+
+	<audio src="assets/audio_test.mp3" controls loop>
+		If you're seeing this message, that means your browser does not support the <code>audio</code> element!
+	</audio>
+	<p>Testing <code>audio</code> element. MP3 format. We're no strangers to love!</p>
+
+	<hr/>
+
+	<img src="http://i.imgur.com/kvokmak.gif" width="400" height="300" alt="Klapping Ken" usemap="#mapper">
+	<map name="mapper">
+	  <area shape="circle" coords="210,200,25" href="#GotEm" target="_blank" alt="Click the hands!"/>
+	</map>
+	<p>Testing <code>map</code> with <code>area</code> elements. A circle area has been mapped on the above image. Click Ken's hands!</p>
+</body>
+</html>
