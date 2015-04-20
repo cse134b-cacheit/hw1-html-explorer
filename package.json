@@ -20,6 +20,10 @@
   },
   "homepage": "https://github.com/cse134b-cacheit/hw1-html-explorer",
   "dependencies": {
+    "gulp-html-validator": "0.0.5",
     "gulp-live-server": "0.0.14"
+  },
+  "devDependencies": {
+    "gulp-htmlhint": "^0.1.1"
   }
 }
